@@ -1,0 +1,378 @@
+
+body {
+  background-image: url("Putrajaya.jpg");
+  background-attachment: fixed;
+}
+
+
+/* container and grid-box */
+.container {
+  overflow: auto;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 2fr repeat(3,900px) 1fr 1fr;
+  grid-template-columns: auto 300px;
+  grid-gap: 5px;
+  grid-template-areas:
+  'header    header'
+  'ask       ads1  '
+  'search    ads2  '
+  'list      ads3  '
+  'vacancy   ads4  '
+  'footer    footer';
+}
+
+
+.item1 {
+    grid-area: header;
+}
+
+.nav-bar{
+    grid-area: nav-bar;
+}
+
+.item2 {
+    grid-area: ask;
+}
+
+.item3 {
+    grid-area: search;
+}
+
+.item4 {
+    grid-area: list;
+}
+
+.vacancy {
+    grid-area: vacancy;
+}
+
+.ads1 {
+    grid-area: ads1;
+}
+
+.ads2 {
+    grid-area: ads2;
+}
+
+.ads3 {
+    grid-area: ads3;
+}
+
+.ads4 {
+    grid-area: ads4;
+}
+
+.main-footer {
+    grid-area: footer;
+}
+
+/* * {
+    font-family: "Yusei+Magic", sans-serif;
+    font-size: 100px;
+} */
+
+/* Logo and Header div */
+.logoAndHeader {
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0px;
+  margin-left: 30px;
+}
+
+h2 {
+  font-size: 100px;
+  font-family: "Yusei+Magic", sans-serif;
+  font-weight: bold;
+}
+
+ /*navigation */
+.navbar {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     font-family: 'Josefin Sans', sans-serif;
+ }
+
+ .navbar {
+     font-size: 50px;
+     background-image: linear-gradient(260deg, #2376ae 0%, #004d4d 100%);
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     padding-bottom: 10px;
+ }
+
+ .main-nav a:hover {
+    color: #004d4d;
+ }
+
+ .main-nav {
+     list-style-type: none;
+     display: none;
+ }
+
+.nav-links {
+    font-size: 50px;
+}
+
+ .nav-links,
+ .nav-menu {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.7);
+ }
+
+ .main-nav li {
+     text-align: center;
+     margin: 5px auto;
+ }
+
+ .nav-menu {
+     display: inline-block;
+     font-size: 50px;
+ }
+
+ .navbar-toggle {
+     cursor: pointer;
+     color: rgba(255, 255, 255, 0.8);
+     font-size: 50px;
+     padding: 20px 300px 20px 300px;
+ }
+
+ .active {
+     display: block;
+ }
+
+p {
+  font-size: 50px;
+}
+
+header h1 {
+  font-size: 200px;
+  font-family: 'Anton', sans-serif;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.item {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.item1 {
+  background-color: #b3ffb3;
+  text-align: center;
+}
+
+.description {
+  font-size: 120px;
+}
+
+.item2 {
+  background-color: #abc7e0;
+  text-align: center;
+}
+
+.item3 {
+  background-color: #adada3;
+  text-align: center;
+}
+
+.item4 {
+  background-color: #e39e5d;
+  text-align: center;
+  max-height: 900px;
+}
+
+.btn:hover,
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 60px 128px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 40px;
+}
+
+.btn {
+   transition: transform .8s;
+}
+
+.btn:hover {
+      opacity: 50%;
+      transform: scale(1.1);
+}
+
+div p {
+  font-family: 'Sriracha', cursive;
+}
+
+/* vacancy */
+.vacancy img{
+  max-height: 500px;
+}
+
+/* advertisements */
+.ads {
+    border: 5px black solid;
+}
+
+.ads:hover {
+    opacity: 40%;
+}
+
+.ads:hover::before {
+    content: "Slots are limited, secure it fast!"
+    fonts: 15px;
+}
+
+.adsImgAbove1000 {
+  display: none;
+}
+
+/* footer elements */
+.main-footer {
+  font-size: 20px;
+  display: flex;
+  justify-content:space-around;
+  height: 25px;
+  background-color:  #b3ffb3;
+  padding:20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.instaLogo p {
+  font-size: 20px;
+  display:inline;
+}
+
+/* media query */
+@media (min-width: 1000px) {
+
+/* font size */
+  .item h2 {
+    font-size: 40px;
+  }
+
+  .item p {
+    font-size: 20px;
+  }
+
+  .item .btn {
+    font-size: 20px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .nav-menu,
+  .nav-links {
+    font-size: 20px;
+  }
+
+.navbar {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 0;
+   height: 50px;
+   align-items: center;
+}
+
+.main-nav {
+   display: flex;
+   margin-right: 30px;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.main-nav li {
+   margin: 0;
+}
+
+
+.nav-links {
+   margin-left: 40px;
+   padding: 23px 30px 3px 30px;
+}
+
+.nav-menu {
+   margin-top: 0;
+}
+
+.navbar-toggle {
+   display: none;
+}
+
+.nav-links:hover {
+   color: rgba(255, 255, 255, 1);
+   background-color: #00cccc;
+}
+
+  .item1 p {
+    font-size: 50px;
+  }
+
+  .container {
+    grid-template-columns: auto 1fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr 1fr 20px;
+    grid-template-areas:
+    'header header  header  header  header'
+    'ads1   ask     search  list    ads3  '
+    'ads2   vacancy vacancy vacancy ads4  '
+    'footer footer  footer  footer  footer';
+  }
+
+  .item {
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+  }
+
+  .btn:hover,
+  .btn {
+    margin-top: auto;
+    padding: 10px;
+  }
+
+  /* vacancy */
+  .vacancy img{
+    max-height: 300px;
+  }
+
+  /* ads */
+  .ads {
+    max-height: 300px;
+    overflow: hidden;
+  }
+
+  .adsImgBelow1000 {
+    display: none;
+  }
+
+  .adsImgAbove1000 {
+    display: block;
+  }
+
+  /* footer */
+  .main-footer {
+    position: static;
+    max-width: 100%;
+  }
+}
