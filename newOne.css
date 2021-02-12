@@ -5,6 +5,42 @@ body {
 }
 
 
+/* alert */
+.alert {
+  padding: 20px;
+  background-color: #84d5e3;
+  color: white;
+  font-size: 40px;
+  opacity: 70%;
+}
+
+/* .alert ol {
+  list-style-type: none;
+} */
+
+.alert ol li {
+  font-size: 30px;
+}
+
+.alert p {
+  font-size: 20px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 50px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
 /* container and grid-box */
 .container {
   overflow: auto;
