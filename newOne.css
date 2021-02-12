@@ -4,6 +4,10 @@ body {
   background-attachment: fixed;
 }
 
+hr {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
 
 /* alert */
 .alert {
