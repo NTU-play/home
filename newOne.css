@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("Putrajaya.jpg");
+  background-color: #BEE5BF;
   background-attachment: fixed;
 }
 
@@ -9,7 +9,7 @@ hr {
   margin-top: 0px;
 }
 
-
+/*  */
 /* alert */
 .alert {
   padding: 20px;
@@ -17,6 +17,7 @@ hr {
   color: white;
   font-size: 40px;
   opacity: 70%;
+  color: green;
 }
 
 /* .alert ol {
@@ -143,13 +144,14 @@ h2 {
 
  .navbar {
      font-size: 50px;
-     background-image: linear-gradient(260deg, #2376ae 0%, #004d4d 100%);
+     background-color: #4A7856;
      border: 1px solid rgba(0, 0, 0, 0.2);
      padding-bottom: 10px;
  }
 
  .main-nav a:hover {
-    color: #004d4d;
+    color: white;
+    background-color: #345830;
  }
 
  .main-nav {
@@ -208,8 +210,9 @@ li a:hover {
 }
 
 .item1 {
-  background-color: #b3ffb3;
+  background-color: #1E3F20;
   text-align: center;
+  color: white;
 }
 
 .description {
@@ -217,17 +220,17 @@ li a:hover {
 }
 
 .item2 {
-  background-color: #abc7e0;
+  background-color: #8ce663;
   text-align: center;
 }
 
 .item3 {
-  background-color: #adada3;
+  background-color: #499c24;
   text-align: center;
 }
 
 .item4 {
-  background-color: #e39e5d;
+  background-color: #7ba668;
   text-align: center;
   max-height: 900px;
 }
@@ -235,13 +238,14 @@ li a:hover {
 .btn:hover,
 .btn {
   background-color: #4CAF50; /* Green */
-  border: none;
+  border: 1px black solid;
   color: white;
   padding: 60px 128px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 40px;
+  border-radius: 5px;
 }
 
 .btn {
@@ -290,7 +294,7 @@ div p {
   display: flex;
   justify-content:space-around;
   height: 25px;
-  background-color:  #b3ffb3;
+  background-color:  #345830;
   padding:20px;
   position: fixed;
   left: 0;
@@ -300,6 +304,15 @@ div p {
 .instaLogo p {
   font-size: 20px;
   display:inline;
+  color: #6eeb34;
+}
+
+.instaLogo a i {
+  color: white;
+}
+
+.main-footer span{
+  color: #6eeb34;
 }
 
 /* media query */
@@ -370,8 +383,12 @@ div p {
   }
 
   .container {
+    max-width: 1280px;
+    max-height: 720px;
     grid-template-columns: auto 1fr 1fr 1fr auto;
     grid-template-rows: 1fr 1fr 1fr 20px;
+    max-width: 1280px;
+    max-height: 720px;
     grid-template-areas:
     'header header  header  header  header'
     'ads1   ask     search  list    ads3  '
